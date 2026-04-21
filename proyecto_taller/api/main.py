@@ -1,12 +1,4 @@
-from fastapi import FastAP
-import psycopg2
 
-app = FastAPI()
-
-def conectar():
-    return psycopg2.connect(
-    host="localhost",
-    dbname="empresa",
 from fastapi import FastAPI
 import psycopg2
 from config import DB_CONFIG 
