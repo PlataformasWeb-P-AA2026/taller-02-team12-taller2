@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAP
 import psycopg2
 
 app = FastAPI()
@@ -7,7 +7,24 @@ def conectar():
     return psycopg2.connect(
     host="localhost",
     dbname="empresa",
-    user="apiuser",
+from fastapi import FastAPI
+import psycopg2
+from config import DB_CONFIG 
+
+app = FastAPI()
+
+def conectar():
+    return psycopg2.connect(**DB_CONFIG)
+
+@app.get("/empleados")
+def empleados():
+    conn = conectar()
+    cur = conn.cursor()
+    cur.execute("SELECT nombre, departamento, salario FROM empleados")
+    datos = cur.fetchall()
+    cur.close()
+    conn.close()
+    return [{"nombre": d[0], "departamento": d[1], "salario": d[2]} for d in datos]    user="apiuser",
     password="1234"
 )
 
