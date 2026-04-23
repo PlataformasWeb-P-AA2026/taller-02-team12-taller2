@@ -1,4 +1,9 @@
-Instrucciones:
-# Plantilla de configuración para el Dashboard
-# Instrucciones: Copia este archivo como config.py y pon la IP de api1
-API_URL = "http://PONER_AQUI_IP_DE_API1:8000/empleados"
+# Plantilla de configuración para la API
+# Instrucciones: Copia este archivo como config.py y pon tus datos reales
+DB_CONFIG = {
+    "host": "PONER_AQUI_IP_DE_BASE1",
+    "database": "taller2",
+    "user": "postgres",
+    "password": "TU_PASSWORD",
+    "port": "5432"
+}
