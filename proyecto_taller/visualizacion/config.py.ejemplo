@@ -1,7 +1,3 @@
-DB_CONFIG = {
-    "host": "IP_DE_TU_MAQUINA_BASE1",
-    "database": "NOMBRE_DB",
-    "user": "USUARIO_POSTGRES",
-    "password": "PASSWORD_POSTGRES",
-    "port": "5432"
-}
+# Plantilla de configuración para el Dashboard
+# Instrucciones: Copia este archivo como config.py y pon la IP de api1
+API_URL = "http://PONER_AQUI_IP_DE_API1:8000/empleados"
