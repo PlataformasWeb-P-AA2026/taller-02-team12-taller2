@@ -1,3 +1,4 @@
 # Plantilla de configuración para el Dashboard
 # Instrucciones: Copia este archivo como config.py y pon la IP de api1
+# IP de la máquina api1 (ejemplo: http://10.0.0.5:8000/empleados)
 API_URL = "http://PONER_AQUI_IP_DE_API1:8000/empleados"
